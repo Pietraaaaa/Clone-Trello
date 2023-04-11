@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Quadro de Tarefas</title>
+	<link rel="stylesheet" href="style.css">
+    <script src="interação.js"></script>
+
+</head>
+<body>
+	<h1>Quadro de Tarefas</h1>
+	<div id="lists">
+		<div class="list">
+			<h2> To Do</h2>
+			<ul>
+			
+			</ul>
+			<button class="add-task-btn" onclick="addTask('list1')">Adicionar Tarefa</button> <!-- botão adcionar task -->
+            <button class="excluir-quadro">Excluir</button> <!-- botão excluir quadro-->
+		</div>
+
+        <div class="list">
+			<h2> Doing </h2>
+			<ul id="list2" class="task-list">
+				<li class="task">
+					<input type="checkbox" id="task1" name="task1">
+					<label for="task1">Tarefa 1</label>
+				</li>
+				<li class="task">
+					<input type="checkbox" id="task2" name="task2">
+					<label for="task2">Tarefa 2</label>
+				</li>
+			</ul>
+			<button class="add-task-btn" onclick="addTask('list1')">Adicionar Tarefa</button> <!-- botão adcionar task -->
+            <button class="excluir-quadro">Excluir</button> <!-- botão excluir quadro-->
+		</div>
+
+		<div class="list">
+
+			<h2> Done </h2>
+			<ul id="list3" class="task-list">
+				<li class="task">
+					<input type="checkbox" id="task3" name="task3">
+					<label for="task3">Tarefa 3</label>
+				</li>
+				<li class="task">
+					<input type="checkbox" id="task4" name="task4">
+					<label for="task4">Tarefa 4</label>
+				</li>
+			</ul>
+			<button class="add-task-btn" onclick="addTask('list2')">Adicionar Tarefa</button>  <!-- botão adcionar task -->
+            <button class="excluir-quadro">Excluir</button> <!-- botão excluir quadro-->
+		</div>
+	</div>
+
+    <button id="add-list-btn" onclick="addList()">Adicionar Lista</button>
+
+</body>
+</html>
